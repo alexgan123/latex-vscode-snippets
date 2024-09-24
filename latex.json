@@ -1,0 +1,407 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  // 	"scope": "javascript,typescript",
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  "Inline math": {
+    "scope": "latex",
+    "prefix": "imath",
+    "body": [
+      "$ $0 $"
+    ],
+  },
+  "Inline math - markdown": {
+    "scope": "markdown",
+    "prefix": "imath",
+    "body": [
+      "$$0$"
+    ],
+  },
+  "Display math": {
+    "scope": "latex",
+    "prefix": "dmath",
+    "body": [
+      "\\[ $0 \\]",
+    ],
+  },
+  "Display math - markdown": {
+    "scope": "markdown",
+    "prefix": "dmath",
+    "body": [
+      "$$ $0 $$",
+    ],
+  },
+  // ====================== BRACKETS
+  "Integral Result": {
+    "scope": "latex",
+    "prefix": "intresult",
+    "body": [
+      "\\left[ $0 \\right]_{}^{}"
+    ],
+  },
+  "Brackets": {
+    "scope": "latex",
+    "prefix": "bracket",
+    "body": [
+      "\\left( $0 \\right)"
+    ],
+  },
+  "square bracket": {
+    "scope": "latex",
+    "prefix": "square",
+    "body": [
+      "\\left[ $0 \\right]"
+    ],
+  },
+  "curly": {
+    "scope": "latex",
+    "prefix": "curly",
+    "body": [
+      "\\left\\{ $0 \\right\\\\}"
+    ],
+  },
+  "angle": {
+    "scope": "latex",
+    "prefix": "anglebracket",
+    "body": [
+      "\\left\\langle $0 \\right\\rangle"
+    ],
+  },
+  "abs": {
+    "scope": "latex",
+    "prefix": "abs",
+    "body": "\\left| $0 \\right|",
+  },
+  "norm": {
+    "scope": "latex",
+    "prefix": "norm",
+    "body": "\\left\\| $0 \\right\\|",
+  },
+  "floor": {
+    "scope": "latex",
+    "prefix": "floor",
+    "body": "\\left\\lfloor $0 \\right\\rfloor",
+  },
+  "ceil": {
+    "scope": "latex",
+    "prefix": "ceil",
+    "body": "\\left\\lceil $0 \\right\\rceil",
+  },
+  // ======================= Math
+  // No space at the end
+  "Fraction": {
+    "scope": "latex",
+    "prefix": "frac",
+    "body": "\\frac{$0}{}",
+  },
+  "Binom": {
+    "scope": "latex",
+    "prefix": "binom",
+    "body": "\\binom{$0}{}",
+  },
+  "Summation": {
+    "scope": "latex",
+    "prefix": "sum",
+    "body": "\\sum_{$0}^{}",
+  },
+  "Integral": {
+    "scope": "latex",
+    "prefix": "int",
+    "body": "\\int_{$0}^{} \\,d",
+  },
+  "Matrix": {
+    "scope": "latex",
+    "prefix": "matrix",
+    "body": [
+      "\\begin{bmatrix}",
+      "    $0 & \\\\\\",
+      "\\end{bmatrix}"
+    ],
+  },
+  "Augmented Matrix": {
+    "scope": "latex",
+    "prefix": "augmatrix",
+    "body": [
+      "\\left[",
+      "\\begin{array}{ccc|c}",
+      "    $0 & & & \\\\\\",
+      "\\end{array}",
+      "\\right]"
+    ],
+  },
+  "times": {
+    "scope": "latex",
+    "prefix": "times",
+    "body": "\\times",
+  },
+  "cdot": {
+    "scope": "latex",
+    "prefix": "dot",
+    "body": "\\cdot",
+  },
+  "newpar": {
+    "scope": "latex",
+    "prefix": "newpar",
+    "body": [
+      "",
+      "\\medskip",
+      "\\noindent",
+      "$0"
+    ]
+  },
+  "mid": {
+    "scope": "latex",
+    "prefix": "mid",
+    "body": [
+      "\\mid"
+    ],
+  },
+  "midbig": {
+    "scope": "latex",
+    "prefix": "midbig",
+    "body": [
+      "\\,\\Big|\\,"
+    ],
+  },
+  "sqrt": {
+    "scope": "latex",
+    "prefix": "sqrt",
+    "body": "\\sqrt{$0}",
+  },
+  "align": {
+    "scope": "latex, markdown",
+    "prefix": "align",
+    "body": [
+      "\\begin{align*}",
+      "    &$0 \\\\\\",
+      "\\end{align*}"
+    ]
+  },
+  "sin": {
+    "scope": "latex",
+    "prefix": "sin",
+    "body": "\\sin",
+  },
+  "cos": {
+    "scope": "latex",
+    "prefix": "cos",
+    "body": "\\cos",
+  },
+  "tan": {
+    "scope": "latex",
+    "prefix": "tan",
+    "body": "\\tan",
+  },
+  "pi": {
+    "scope": "latex",
+    "prefix": "pi",
+    "body": "\\pi",
+  },
+  "le": {
+    "scope": "latex",
+    "prefix": "le",
+    "body": "\\le",
+  },
+  "ge": {
+    "scope": "latex",
+    "prefix": "ge",
+    "body": "\\ge",
+  },
+  "to": {
+    "scope": "latex",
+    "prefix": "to",
+    "body": "\\to",
+  },
+  "Inf": {
+    "scope": "latex",
+    "prefix": "infty",
+    "body": "\\infty",
+  },
+  "Greek letter theta": {
+    "scope": "latex",
+    "prefix": "theta",
+    "body": "\\theta",
+  },
+  "Greek letter alpha": {
+    "scope": "latex",
+    "prefix": "alpha",
+    "body": "\\alpha",
+  },
+  "Greek letter beta": {
+    "scope": "latex",
+    "prefix": "beta",
+    "body": "\\beta",
+  },
+  "Greek letter gamma": {
+    "scope": "latex",
+    "prefix": "gamma",
+    "body": "\\gamma",
+  },
+  "Limit": {
+    "scope": "latex",
+    "prefix": "lim",
+    "body": "\\lim_{$0 \\to }",
+  },
+  "Derivative": {
+    "scope": "latex",
+    "prefix": "derivative",
+    "body": "\\frac{d}{d$0}",
+  },
+  "Partial Derivative": {
+    "scope": "latex",
+    "prefix": "partial",
+    "body": "\\frac{\\partial}{\\partial $0}",
+  },
+  "Cases": {
+    "scope": "latex",
+    "prefix": "cases",
+    "body": [
+      "\\begin{cases}",
+      "    ${1:expression_1}, & \\text{if } ${2:condition_1} \\\\\\",
+      "    ${3:expression_2}, & \\text{if } ${4:condition_2}",
+      "\\end{cases}"
+    ],
+  },
+  "Bold text": {
+    "scope": "latex",
+    "prefix": "bold",
+    "body": "\\textbf{$0}",
+  },
+  "Text": {
+    "scope": "latex",
+    "prefix": "text",
+    "body": "\\text{$0}",
+  },
+  "Complex": {
+    "scope": "latex",
+    "prefix": "complex",
+    "body": "\\mathbb{C}",
+  },
+  "Rational": {
+    "scope": "latex",
+    "prefix": "rational",
+    "body": "\\mathbb{Q}",
+  },
+  "Integers": {
+    "scope": "latex",
+    "prefix": "integers",
+    "body": "\\mathbb{Z}",
+  },
+  "Real": {
+    "scope": "latex",
+    "prefix": "real",
+    "body": "\\mathbb{R}",
+  },
+  "Natural": {
+    "scope": "latex",
+    "prefix": "natural",
+    "body": "\\mathbb{N}",
+  },
+  // ================== PSEUDOCODE
+  "Algorithm": {
+    "scope": "latex",
+    "prefix": "algorithm",
+    "body": [
+      "\\begin{algorithm}",
+      "\\DontPrintSemicolon",
+      "\\SetKwComment{Comment}{// }{}",
+      "\\caption{$0}",
+      "",
+      "\\KwIn{$ $}",
+      "\\KwOut{}",
+      "",
+      "\\end{algorithm}"
+    ]
+  },
+  "Input": {
+    "scope": "latex",
+    "prefix": "input",
+    "body": "\\KwIn{$ $0 $}",
+  },
+  "Comment": {
+    "scope": "latex",
+    "prefix": "comment",
+    "body": "\\Comment*[h]{$0}",
+  },
+  "State": {
+    "scope": "latex",
+    "prefix": "state",
+    "body": "$ $0 $ \\;",
+  },
+  "Gets": {
+    "scope": "latex",
+    "prefix": "gets",
+    "body": "\\gets",
+  },
+  "If": {
+    "scope": "latex",
+    "prefix": "if",
+    "body": [
+      "\\If {$ $0 $} {",
+      "    ",
+      "}"
+    ]
+  },
+  "Else If": {
+    "scope": "latex",
+    "prefix": "elseif",
+    "body": [
+      "\\ElseIf {$ $0 $} {",
+      "    ",
+      "}"
+    ]
+  },
+  "Else": {
+    "scope": "latex",
+    "prefix": "else",
+    "body": [
+      "\\Else {",
+      "    $0",
+      "}"
+    ]
+  },
+  "For": {
+    "scope": "latex",
+    "prefix": "for",
+    "body": [
+      "\\For {$ $0 $ \\KwTo $ $} {",
+      "    ",
+      "}"
+    ]
+  },
+  "ForAll": {
+    "scope": "latex",
+    "prefix": "forall",
+    "body": [
+      "\\ForAll {$ $0 $} {",
+      "    ",
+      "}"
+    ]
+  },
+  "While": {
+    "scope": "latex",
+    "prefix": "while",
+    "body": [
+      "\\While {$ $0 $} {",
+      "    ",
+      "}"
+    ]
+  },
+  "Return": {
+    "scope": "latex",
+    "prefix": "return",
+    "body": "\\Return{$ $0 $}\\;",
+  },
+}
