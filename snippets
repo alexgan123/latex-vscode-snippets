@@ -15,71 +15,75 @@
   // 	],
   // 	"description": "Log output to console"
   // }
-  "Inline math": {
+
+  // ==============================
+  // Math Modes
+  "inline math": {
     "scope": "latex",
     "prefix": "imath",
     "body": [
       "$ $0 $"
     ],
   },
-  "Inline math - markdown": {
+  "inline math - markdown": {
     "scope": "markdown",
     "prefix": "imath",
     "body": [
       "$$0$"
     ],
   },
-  "Display math": {
+  "display math": {
     "scope": "latex",
     "prefix": "dmath",
     "body": [
       "\\[ $0 \\]",
     ],
   },
-  "Display math - markdown": {
+  "display math - markdown": {
     "scope": "markdown",
     "prefix": "dmath",
     "body": [
       "$$ $0 $$",
     ],
   },
-  // ====================== BRACKETS
-  "Integral Result": {
+  // =============================
+  // Brackets - should be surrounded by \left \right
+  "integral result": {
     "scope": "latex",
     "prefix": "intresult",
     "body": [
       "\\left[ $0 \\right]_{}^{}"
     ],
   },
-  "Brackets": {
+  "brackets": {
     "scope": "latex",
     "prefix": "bracket",
     "body": [
       "\\left( $0 \\right)"
     ],
   },
-  "square bracket": {
+  "square brackets": {
     "scope": "latex",
-    "prefix": "square",
+    "prefix": "squarebracket",
     "body": [
       "\\left[ $0 \\right]"
     ],
   },
-  "curly": {
+  "curly brackets": {
     "scope": "latex",
-    "prefix": "curly",
+    "prefix": "curlybracket",
     "body": [
       "\\left\\{ $0 \\right\\\\}"
     ],
   },
-  "angle": {
+  "angle brackets": {
     "scope": "latex",
     "prefix": "anglebracket",
     "body": [
       "\\left\\langle $0 \\right\\rangle"
     ],
   },
-  "abs": {
+  "absolute value": {
     "scope": "latex",
     "prefix": "abs",
     "body": "\\left| $0 \\right|",
@@ -99,29 +103,30 @@
     "prefix": "ceil",
     "body": "\\left\\lceil $0 \\right\\rceil",
   },
-  // ======================= Math
-  // No space at the end
-  "Fraction": {
+  // ============================
+  // Math
+  // Don't put a space at the end
+  "fraction": {
     "scope": "latex",
     "prefix": "frac",
     "body": "\\frac{$0}{}",
   },
-  "Binom": {
+  "binom": {
     "scope": "latex",
     "prefix": "binom",
     "body": "\\binom{$0}{}",
   },
-  "Summation": {
+  "summation": {
     "scope": "latex",
     "prefix": "sum",
     "body": "\\sum_{$0}^{}",
   },
-  "Integral": {
+  "integral": {
     "scope": "latex",
     "prefix": "int",
     "body": "\\int_{$0}^{} \\,d",
   },
-  "Matrix": {
+  "matrix": {
     "scope": "latex",
     "prefix": "matrix",
     "body": [
@@ -130,7 +135,7 @@
       "\\end{bmatrix}"
     ],
   },
-  "Augmented Matrix": {
+  "augmented matrix": {
     "scope": "latex",
     "prefix": "augmatrix",
     "body": [
@@ -146,14 +151,14 @@
     "prefix": "times",
     "body": "\\times",
   },
-  "cdot": {
+  "dot": {
     "scope": "latex",
     "prefix": "dot",
     "body": "\\cdot",
   },
-  "newpar": {
+  "newpart": {
     "scope": "latex",
-    "prefix": "newpar",
+    "prefix": "newpart",
     "body": [
       "",
       "\\medskip",
@@ -185,7 +190,7 @@
     "prefix": "align",
     "body": [
       "\\begin{align*}",
-      "    &$0 \\\\\\",
+      "    $0 &= \\\\\\",
       "\\end{align*}"
     ]
   },
@@ -209,62 +214,62 @@
     "prefix": "pi",
     "body": "\\pi",
   },
-  "le": {
+  "leq": {
     "scope": "latex",
-    "prefix": "le",
-    "body": "\\le",
+    "prefix": "leq",
+    "body": "\\leq",
   },
-  "ge": {
+  "geq": {
     "scope": "latex",
-    "prefix": "ge",
-    "body": "\\ge",
+    "prefix": "geq",
+    "body": "\\geq",
   },
   "to": {
     "scope": "latex",
     "prefix": "to",
     "body": "\\to",
   },
-  "Inf": {
+  "infinity": {
     "scope": "latex",
     "prefix": "infty",
     "body": "\\infty",
   },
-  "Greek letter theta": {
+  "greek letter theta": {
     "scope": "latex",
     "prefix": "theta",
     "body": "\\theta",
   },
-  "Greek letter alpha": {
+  "greek letter alpha": {
     "scope": "latex",
     "prefix": "alpha",
     "body": "\\alpha",
   },
-  "Greek letter beta": {
+  "greek letter beta": {
     "scope": "latex",
     "prefix": "beta",
     "body": "\\beta",
   },
-  "Greek letter gamma": {
+  "greek letter gamma": {
     "scope": "latex",
     "prefix": "gamma",
     "body": "\\gamma",
   },
-  "Limit": {
+  "limit": {
     "scope": "latex",
     "prefix": "lim",
     "body": "\\lim_{$0 \\to }",
   },
-  "Derivative": {
+  "derivative": {
     "scope": "latex",
     "prefix": "derivative",
     "body": "\\frac{d}{d$0}",
   },
-  "Partial Derivative": {
+  "partial derivative": {
     "scope": "latex",
     "prefix": "partial",
     "body": "\\frac{\\partial}{\\partial $0}",
   },
-  "Cases": {
+  "cases": {
     "scope": "latex",
     "prefix": "cases",
     "body": [
@@ -274,43 +279,45 @@
       "\\end{cases}"
     ],
   },
-  "Bold text": {
+  "bold text": {
     "scope": "latex",
     "prefix": "bold",
     "body": "\\textbf{$0}",
   },
-  "Text": {
+  "text": {
     "scope": "latex",
     "prefix": "text",
     "body": "\\text{$0}",
   },
-  "Complex": {
+  "complex": {
     "scope": "latex",
     "prefix": "complex",
     "body": "\\mathbb{C}",
   },
-  "Rational": {
+  "rational": {
     "scope": "latex",
     "prefix": "rational",
     "body": "\\mathbb{Q}",
   },
-  "Integers": {
+  "integers": {
     "scope": "latex",
     "prefix": "integers",
     "body": "\\mathbb{Z}",
   },
-  "Real": {
+  "real": {
     "scope": "latex",
     "prefix": "real",
     "body": "\\mathbb{R}",
   },
-  "Natural": {
+  "natural": {
     "scope": "latex",
     "prefix": "natural",
     "body": "\\mathbb{N}",
   },
-  // ================== PSEUDOCODE
-  "Algorithm": {
+  // ======================
+  // Pseudocode
+  // Uses algorithm2e package
+  "algorithm": {
     "scope": "latex",
     "prefix": "algorithm",
     "body": [
@@ -325,27 +332,27 @@
       "\\end{algorithm}"
     ]
   },
-  "Input": {
+  "input": {
     "scope": "latex",
     "prefix": "input",
     "body": "\\KwIn{$ $0 $}",
   },
-  "Comment": {
+  "comment": {
     "scope": "latex",
     "prefix": "comment",
     "body": "\\Comment*[h]{$0}",
   },
-  "State": {
+  "statement": {
     "scope": "latex",
-    "prefix": "state",
+    "prefix": "statement",
     "body": "$ $0 $ \\;",
   },
-  "Gets": {
+  "gets": {
     "scope": "latex",
     "prefix": "gets",
     "body": "\\gets",
   },
-  "If": {
+  "if": {
     "scope": "latex",
     "prefix": "if",
     "body": [
@@ -354,7 +361,7 @@
       "}"
     ]
   },
-  "Else If": {
+  "else If": {
     "scope": "latex",
     "prefix": "elseif",
     "body": [
@@ -363,7 +370,7 @@
       "}"
     ]
   },
-  "Else": {
+  "else": {
     "scope": "latex",
     "prefix": "else",
     "body": [
@@ -372,7 +379,7 @@
       "}"
     ]
   },
-  "For": {
+  "for": {
     "scope": "latex",
     "prefix": "for",
     "body": [
@@ -381,7 +388,7 @@
       "}"
     ]
   },
-  "ForAll": {
+  "forall": {
     "scope": "latex",
     "prefix": "forall",
     "body": [
@@ -390,7 +397,7 @@
       "}"
     ]
   },
-  "While": {
+  "while": {
     "scope": "latex",
     "prefix": "while",
     "body": [
@@ -399,7 +406,7 @@
       "}"
     ]
   },
-  "Return": {
+  "return": {
     "scope": "latex",
     "prefix": "return",
     "body": "\\Return{$ $0 $}\\;",
