@@ -98,8 +98,6 @@
       "\\quad",
     ]
   },
-
-
   // =============================
   // Brackets - should be surrounded by \left \right
   "integral result": {
@@ -171,6 +169,37 @@
       "\\label{fig:${4:label}}",
       "\\end{figure}",
       "$0"
+    ]
+  },
+  "figure-subfigure": {
+    "scope": "latex",
+    "prefix": "figure-subfigure",
+    "body": [
+      "\\begin{figure}",
+      "\\centering",
+      "    \\begin{subfigure}[b]{0.3\\textwidth}",
+      "    \\centering",
+      "    \\includegraphics[width=\\textwidth]{}",
+      "    \\caption{}",
+      "    \\label{fig:}",
+      "    \\end{subfigure}",
+      "\\hfill",
+      "    \\begin{subfigure}[b]{0.3\\textwidth}",
+      "    \\centering",
+      "    \\includegraphics[width=\\textwidth]{}",
+      "    \\caption{}",
+      "    \\label{fig:}",
+      "    \\end{subfigure}",
+      "\\hfill",
+      "    \\begin{subfigure}[b]{0.3\\textwidth}",
+      "    \\centering",
+      "    \\includegraphics[width=\\textwidth]{}",
+      "    \\caption{}",
+      "    \\label{fig:}",
+      "    \\end{subfigure}",
+      "\\caption{}",
+      "\\label{fig:}",
+      "\\end{figure}"
     ]
   },
   "ref": {
